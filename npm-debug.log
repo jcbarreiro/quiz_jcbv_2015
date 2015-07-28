@@ -1,0 +1,326 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose readDependencies loading dependencies from /home/juancarlos/proyecto_modulo6/quiz/package.json
+5 verbose install where, deps [ '/home/juancarlos/proyecto_modulo6/quiz',
+5 verbose install   [ 'body-parser',
+5 verbose install     'cookie-parser',
+5 verbose install     'debug',
+5 verbose install     'ejs',
+5 verbose install     'express',
+5 verbose install     'express-partials',
+5 verbose install     'morgan',
+5 verbose install     'sequelize',
+5 verbose install     'serve-favicon',
+5 verbose install     'sqlite3' ] ]
+6 verbose install where, peers [ '/home/juancarlos/proyecto_modulo6/quiz', [] ]
+7 verbose installManyTop reading for lifecycle /home/juancarlos/proyecto_modulo6/quiz/package.json
+8 info preinstall quiz@0.0.0
+9 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/body-parser/package.json
+10 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/cookie-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/debug/package.json
+12 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/ejs/package.json
+13 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/express-partials/package.json
+15 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/morgan/package.json
+16 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/serve-favicon/package.json
+17 verbose installManyTop reading scoped package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/sqlite3/package.json
+18 info package.json debug@2.0.0 No license field.
+19 info package.json ejs@0.8.8 No license field.
+20 info package.json express-partials@0.3.0 No license field.
+21 info package.json sqlite3@3.0.9 No license field.
+22 verbose readDependencies loading dependencies from /home/juancarlos/proyecto_modulo6/quiz/package.json
+23 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/body-parser/package.json
+24 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/cookie-parser/package.json
+25 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/debug/package.json
+26 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/ejs/package.json
+27 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/express/package.json
+28 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/express-partials/package.json
+29 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/morgan/package.json
+30 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/serve-favicon/package.json
+31 verbose targetResolver reading package data from /home/juancarlos/proyecto_modulo6/quiz/node_modules/sqlite3/package.json
+32 silly cache add args [ 'sequelize@~1.7.0', null ]
+33 verbose cache add spec sequelize@~1.7.0
+34 silly cache add parsed spec { raw: 'sequelize@~1.7.0',
+34 silly cache add   scope: null,
+34 silly cache add   name: 'sequelize',
+34 silly cache add   rawSpec: '~1.7.0',
+34 silly cache add   spec: '>=1.7.0 <1.8.0',
+34 silly cache add   type: 'range' }
+35 silly addNamed sequelize@>=1.7.0 <1.8.0
+36 verbose addNamed ">=1.7.0 <1.8.0" is a valid semver range for sequelize
+37 silly addNameRange { name: 'sequelize', range: '>=1.7.0 <1.8.0', hasData: false }
+38 silly mapToRegistry name sequelize
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/sequelize
+42 verbose addNameRange registry:https://registry.npmjs.org/sequelize not in flight; fetching
+43 verbose already installed skipping serve-favicon@~2.1.3 /home/juancarlos/proyecto_modulo6/quiz
+44 verbose already installed skipping sqlite3@^3.0.9 /home/juancarlos/proyecto_modulo6/quiz
+45 verbose already installed skipping body-parser@~1.8.1 /home/juancarlos/proyecto_modulo6/quiz
+46 verbose already installed skipping cookie-parser@~1.3.3 /home/juancarlos/proyecto_modulo6/quiz
+47 verbose already installed skipping debug@~2.0.0 /home/juancarlos/proyecto_modulo6/quiz
+48 verbose already installed skipping ejs@~0.8.5 /home/juancarlos/proyecto_modulo6/quiz
+49 verbose already installed skipping express@~4.9.0 /home/juancarlos/proyecto_modulo6/quiz
+50 verbose already installed skipping express-partials@^0.3.0 /home/juancarlos/proyecto_modulo6/quiz
+51 verbose already installed skipping morgan@~1.3.0 /home/juancarlos/proyecto_modulo6/quiz
+52 verbose request uri https://registry.npmjs.org/sequelize
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 18:42:14
+55 verbose request id 91f580268a0a2975
+56 http request GET https://registry.npmjs.org/sequelize
+57 http 200 https://registry.npmjs.org/sequelize
+58 silly get cb [ 200,
+58 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+58 silly get     etag: '"8PEHKORLV8KEXL9479C1MBCV9"',
+58 silly get     'content-type': 'application/json',
+58 silly get     'cache-control': 'max-age=60',
+58 silly get     'content-length': '242415',
+58 silly get     'accept-ranges': 'bytes',
+58 silly get     date: 'Tue, 28 Jul 2015 16:42:14 GMT',
+58 silly get     via: '1.1 varnish',
+58 silly get     age: '0',
+58 silly get     connection: 'keep-alive',
+58 silly get     'x-served-by': 'cache-lcy1123-LCY',
+58 silly get     'x-cache': 'HIT',
+58 silly get     'x-cache-hits': '1',
+58 silly get     'x-timer': 'S1438101733.750735,VS0,VE380',
+58 silly get     vary: 'Accept' } ]
+59 verbose get saving sequelize to /home/juancarlos/.npm/registry.npmjs.org/sequelize/.cache.json
+60 silly addNameRange number 2 { name: 'sequelize', range: '>=1.7.0 <1.8.0', hasData: true }
+61 silly addNameRange versions [ 'sequelize',
+61 silly addNameRange   [ '0.2.2',
+61 silly addNameRange     '0.2.3',
+61 silly addNameRange     '0.2.4',
+61 silly addNameRange     '0.2.5',
+61 silly addNameRange     '0.2.6',
+61 silly addNameRange     '0.3.0',
+61 silly addNameRange     '0.4.0',
+61 silly addNameRange     '0.4.1',
+61 silly addNameRange     '0.4.2',
+61 silly addNameRange     '0.4.3',
+61 silly addNameRange     '1.0.0',
+61 silly addNameRange     '1.0.1',
+61 silly addNameRange     '1.0.2',
+61 silly addNameRange     '1.1.0',
+61 silly addNameRange     '1.1.1',
+61 silly addNameRange     '1.1.2',
+61 silly addNameRange     '1.1.3',
+61 silly addNameRange     '1.1.4',
+61 silly addNameRange     '1.2.0',
+61 silly addNameRange     '1.2.1',
+61 silly addNameRange     '1.3.0',
+61 silly addNameRange     '1.3.1',
+61 silly addNameRange     '1.3.2',
+61 silly addNameRange     '1.3.3',
+61 silly addNameRange     '1.3.4',
+61 silly addNameRange     '1.3.5',
+61 silly addNameRange     '1.3.6',
+61 silly addNameRange     '1.3.7',
+61 silly addNameRange     '1.4.0',
+61 silly addNameRange     '1.4.1',
+61 silly addNameRange     '1.5.0-alpha',
+61 silly addNameRange     '1.5.0-beta',
+61 silly addNameRange     '1.5.0-beta-2',
+61 silly addNameRange     '1.5.0',
+61 silly addNameRange     '1.6.0-alpha-1',
+61 silly addNameRange     '1.6.0-alpha-2',
+61 silly addNameRange     '1.6.0-alpha-3',
+61 silly addNameRange     '1.6.0-beta-1',
+61 silly addNameRange     '1.6.0-beta-2',
+61 silly addNameRange     '1.6.0-beta-3',
+61 silly addNameRange     '1.6.0-beta4',
+61 silly addNameRange     '1.6.0',
+61 silly addNameRange     '1.7.0-alpha1',
+61 silly addNameRange     '1.7.0-alpha2',
+61 silly addNameRange     '2.0.0-alpha1',
+61 silly addNameRange     '2.0.0-alpha2',
+61 silly addNameRange     '1.7.0-alpha3',
+61 silly addNameRange     '2.0.0-alpha3',
+61 silly addNameRange     '1.7.0-beta.0',
+61 silly addNameRange     '2.0.0-beta.0',
+61 silly addNameRange     '1.7.0-beta.1',
+61 silly addNameRange     '2.0.0-beta.1',
+61 silly addNameRange     '1.7.0-beta.2',
+61 silly addNameRange     '2.0.0-beta.2',
+61 silly addNameRange     '1.7.0-beta.3b',
+61 silly addNameRange     '2.0.0-beta.3',
+61 silly addNameRange     '1.7.0-beta.4a',
+61 silly addNameRange     '2.0.0-beta.4',
+61 silly addNameRange     '1.7.0-beta.5',
+61 silly addNameRange     '2.0.0-beta.5',
+61 silly addNameRange     '1.7.0-beta6',
+61 silly addNameRange     '2.0.0-beta.6',
+61 silly addNameRange     '1.7.0-beta7',
+61 silly addNameRange     '2.0.0-beta.7',
+61 silly addNameRange     '2.0.0-beta.8',
+61 silly addNameRange     '1.7.0-beta8',
+61 silly addNameRange     '1.7.0-rc1',
+61 silly addNameRange     '2.0.0-dev1',
+61 silly addNameRange     '1.7.0-rc2',
+61 silly addNameRange     '2.0.0-dev2',
+61 silly addNameRange     '1.7.0-rc3',
+61 silly addNameRange     '2.0.0-dev3',
+61 silly addNameRange     '1.7.0-rc4',
+61 silly addNameRange     '2.0.0-dev4',
+61 silly addNameRange     '2.0.0-dev5',
+61 silly addNameRange     '1.7.0-rc5',
+61 silly addNameRange     '1.7.0-rc6',
+61 silly addNameRange     '2.0.0-dev6',
+61 silly addNameRange     '2.0.0-dev7',
+61 silly addNameRange     '1.7.0-rc7',
+61 silly addNameRange     '2.0.0-dev8',
+61 silly addNameRange     '1.7.0-rc8',
+61 silly addNameRange     '1.7.0-rc9',
+61 silly addNameRange     '2.0.0-dev9',
+61 silly addNameRange     '2.0.0-dev10',
+61 silly addNameRange     '1.7.0',
+61 silly addNameRange     '1.7.1',
+61 silly addNameRange     '1.7.2',
+61 silly addNameRange     '1.7.3',
+61 silly addNameRange     '2.0.0-dev11',
+61 silly addNameRange     '1.7.4',
+61 silly addNameRange     '1.7.5',
+61 silly addNameRange     '1.7.7',
+61 silly addNameRange     '1.7.8',
+61 silly addNameRange     '1.7.9',
+61 silly addNameRange     '2.0.0-dev12',
+61 silly addNameRange     '1.7.10',
+61 silly addNameRange     '2.0.0-dev13',
+61 silly addNameRange     '2.0.0-rc1',
+61 silly addNameRange     '2.0.0-rc2',
+61 silly addNameRange     '2.0.0-rc3',
+61 silly addNameRange     '2.0.0-rc4',
+61 silly addNameRange     '2.0.0-rc5',
+61 silly addNameRange     '2.0.0-rc6',
+61 silly addNameRange     '2.0.0-rc7',
+61 silly addNameRange     '2.0.0-rc8',
+61 silly addNameRange     '2.0.0',
+61 silly addNameRange     '2.0.1',
+61 silly addNameRange     '2.0.2',
+61 silly addNameRange     '2.0.3',
+61 silly addNameRange     '2.0.4',
+61 silly addNameRange     '2.0.5',
+61 silly addNameRange     '2.0.6',
+61 silly addNameRange     '2.1.0',
+61 silly addNameRange     '2.1.1',
+61 silly addNameRange     '2.1.2',
+61 silly addNameRange     '2.1.3',
+61 silly addNameRange     '3.0.0',
+61 silly addNameRange     '3.0.1',
+61 silly addNameRange     '3.1.0',
+61 silly addNameRange     '3.1.1',
+61 silly addNameRange     '3.2.0',
+61 silly addNameRange     '1.7.11',
+61 silly addNameRange     '3.3.0',
+61 silly addNameRange     '3.3.1',
+61 silly addNameRange     '3.3.2',
+61 silly addNameRange     '3.4.0',
+61 silly addNameRange     '3.4.1',
+61 silly addNameRange     '3.5.0',
+61 silly addNameRange     '3.5.1' ] ]
+62 silly addNamed sequelize@1.7.11
+63 verbose addNamed "1.7.11" is a plain semver version for sequelize
+64 silly mapToRegistry name sequelize
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/sequelize
+68 verbose addRemoteTarball https://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz not in flight; adding
+69 verbose addRemoteTarball [ 'https://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz',
+69 verbose addRemoteTarball   '106ca2073e735d3a2203a8feb0224b2c179b706d' ]
+70 info retry fetch attempt 1 at 18:42:15
+71 info attempt registry request try #1 at 18:42:15
+72 http fetch GET https://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz
+73 http fetch 200 https://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz
+74 silly fetchAndShaCheck shasum 106ca2073e735d3a2203a8feb0224b2c179b706d
+75 verbose addTmpTarball /tmp/npm-3250-143cc342/registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz not in flight; adding
+76 verbose addTmpTarball already have metadata; skipping unpack for sequelize@1.7.11
+77 silly cache afterAdd sequelize@1.7.11
+78 verbose afterAdd /home/juancarlos/.npm/sequelize/1.7.11/package/package.json not in flight; writing
+79 verbose afterAdd /home/juancarlos/.npm/sequelize/1.7.11/package/package.json written
+80 silly install resolved [ { name: 'sequelize',
+80 silly install resolved     description: 'Multi dialect ORM for Node.JS',
+80 silly install resolved     version: '1.7.11',
+80 silly install resolved     author: { name: 'Sascha Depold', email: 'sascha@depold.com' },
+80 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+80 silly install resolved     repository:
+80 silly install resolved      { type: 'git',
+80 silly install resolved        url: 'https://github.com/sequelize/sequelize.git' },
+80 silly install resolved     bugs: { url: 'https://github.com/sequelize/sequelize/issues' },
+80 silly install resolved     dependencies:
+80 silly install resolved      { commander: '~2.1.0',
+80 silly install resolved        lodash: '~2.4.0',
+80 silly install resolved        'underscore.string': '~2.3.0',
+80 silly install resolved        lingo: '~0.0.5',
+80 silly install resolved        validator: '~3.2.0',
+80 silly install resolved        moment: '~2.5.0',
+80 silly install resolved        dottie: '0.1.0',
+80 silly install resolved        'toposort-class': '~0.3.0',
+80 silly install resolved        'generic-pool': '2.0.4',
+80 silly install resolved        sql: '~0.35.0',
+80 silly install resolved        'circular-json': '~0.1.5',
+80 silly install resolved        bluebird: '~1.0.0',
+80 silly install resolved        'node-uuid': '~1.4.1' },
+80 silly install resolved     devDependencies:
+80 silly install resolved      { sqlite3: '~2.1.12',
+80 silly install resolved        mysql: '2.0.1',
+80 silly install resolved        pg: '~2.8.1',
+80 silly install resolved        watchr: '~2.4.11',
+80 silly install resolved        chai: '~1.9.0',
+80 silly install resolved        mocha: '~1.17.0',
+80 silly install resolved        'chai-datetime': '~1.1.1',
+80 silly install resolved        sinon: '~1.8.1',
+80 silly install resolved        mariasql: '0.1.20',
+80 silly install resolved        'chai-spies': '~0.5.1',
+80 silly install resolved        'lcov-result-merger': '0.0.2',
+80 silly install resolved        istanbul: '~0.1.45',
+80 silly install resolved        coveralls: '~2.7.1',
+80 silly install resolved        async: '~0.2.10',
+80 silly install resolved        'coffee-script': '~1.7.1' },
+80 silly install resolved     keywords: [ 'mysql', 'orm', 'nodejs', 'object relational mapper' ],
+80 silly install resolved     main: 'index',
+80 silly install resolved     scripts: { test: 'make all', docs: 'yuidoc . -o docs' },
+80 silly install resolved     bin: { 'sequelize-legacy': 'bin/sequelize' },
+80 silly install resolved     engines: { node: '>=0.6.21' },
+80 silly install resolved     license: 'MIT',
+80 silly install resolved     gitHead: '465aa887ad710cf90caf5eb305ebf6f749f7d704',
+80 silly install resolved     homepage: 'https://github.com/sequelize/sequelize',
+80 silly install resolved     _id: 'sequelize@1.7.11',
+80 silly install resolved     _shasum: '106ca2073e735d3a2203a8feb0224b2c179b706d',
+80 silly install resolved     _from: 'sequelize@>=1.7.0 <1.8.0',
+80 silly install resolved     _npmVersion: '2.7.6',
+80 silly install resolved     _nodeVersion: '0.10.32',
+80 silly install resolved     _npmUser: { name: 'mickhansen', email: 'mick.kasper.hansen@gmail.com' },
+80 silly install resolved     dist:
+80 silly install resolved      { shasum: '106ca2073e735d3a2203a8feb0224b2c179b706d',
+80 silly install resolved        tarball: 'http://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz' },
+80 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+80 silly install resolved     directories: {},
+80 silly install resolved     _resolved: 'https://registry.npmjs.org/sequelize/-/sequelize-1.7.11.tgz' } ]
+81 info install sequelize@1.7.11 into /home/juancarlos/proyecto_modulo6/quiz
+82 info installOne sequelize@1.7.11
+83 verbose installOne of sequelize to /home/juancarlos/proyecto_modulo6/quiz not in flight; installing
+84 warn locking Error: EACCES, open '/home/juancarlos/.npm/_locks/sequelize-73e33369ebbaf469.lock'
+84 warn locking     at Error (native)
+84 warn locking  /home/juancarlos/.npm/_locks/sequelize-73e33369ebbaf469.lock failed { [Error: EACCES, open '/home/juancarlos/.npm/_locks/sequelize-73e33369ebbaf469.lock']
+84 warn locking   errno: -13,
+84 warn locking   code: 'EACCES',
+84 warn locking   path: '/home/juancarlos/.npm/_locks/sequelize-73e33369ebbaf469.lock' }
+85 verbose stack Error: Attempt to unlock /home/juancarlos/proyecto_modulo6/quiz/node_modules/sequelize, which hasn't been locked
+85 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+85 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+85 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+85 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+85 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+85 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+85 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+86 verbose cwd /home/juancarlos/proyecto_modulo6/quiz
+87 error Linux 2.6.32-74-generic
+88 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+89 error node v0.12.7
+90 error npm  v2.11.3
+91 error Attempt to unlock /home/juancarlos/proyecto_modulo6/quiz/node_modules/sequelize, which hasn't been locked
+92 error If you need help, you may report this error at:
+92 error     <https://github.com/npm/npm/issues>
+93 verbose exit [ 1, true ]
