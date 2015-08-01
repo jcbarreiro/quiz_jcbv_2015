@@ -30,7 +30,7 @@ function lee_select(){
 }
 </script>
 <script>
-window.onload = seleccionar(<%= quiz.tema %>);
+window.onload = seleccionar("<%= quiz.tema %>");
 function seleccionar(elemento) {
    var combo = document.forms[0].tema;
    var cantidad = combo.length;
