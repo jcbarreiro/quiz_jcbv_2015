@@ -18,7 +18,7 @@
 </select>
 
 <p><a href="/quizes"><button type="button">Cancelar</button></a>
-<input type="submit" onClick="lee_select()"value="Salvar">
+<input type="submit" value="Salvar">
 
 <script>
 var indice
@@ -27,5 +27,17 @@ function lee_select(){
 	indice = document.forms[0].tema.selectedIndex;
 	valor = document.forms[0].tema.options[indice].value
 	document.getElementById('tem').value = valor;
+}
+</script>
+<script>
+window.onload = seleccionar(quiz[tema]);
+function seleccionar(elemento) {
+   var combo = document.forms[0].tema;
+   var cantidad = combo.length;
+   for (i = 0; i < cantidad; i++) {
+      if (combo[i].value == elemento) {
+         combo[i].selected = true;
+      }   
+   }
 }
 </script>
