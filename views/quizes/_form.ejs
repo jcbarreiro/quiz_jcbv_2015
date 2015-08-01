@@ -5,6 +5,7 @@
 <input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>"/><p>
 
 <input type="hidden" id="tem" name="quiz[tema]"><p>
+
 <label for="preg" class="rem">Tema:</label>
 <select name="tema"><p>
   <option value="Otro" selected>Otro</option>
@@ -16,5 +17,15 @@
   <option value="Tecnología">Tecnología</option>
 </select>
 
-<a href="/quizes"><button type="button">Cancelar</button></a>
-<input type="submit" value="Salvar">
+<p><a href="/quizes"><button type="button">Cancelar</button></a>
+<input type="submit" onClick="lee_select()"value="Salvar">
+
+<script>
+var indice
+var valor
+function lee_select(){
+	indice = document.forms[0].tema.selectedIndex;
+	valor = document.forms[0].tema.options[indice].value
+	document.getElementById('tem').value = valor;
+}
+</script>
