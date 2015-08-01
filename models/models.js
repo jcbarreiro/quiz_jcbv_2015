@@ -49,13 +49,13 @@ sequelize.sync().then(function() {
 	// then(...) ejectuta el manejador una vez creada la tabla
 	Quiz.count().then(function (count){
 	  if(count === 0) { // la tabla se inicializa solo si está vacía
-		Quiz.create({ pregunta: 'Capital de Italia',
-			      respuesta: 'Roma'
-			   });
-		Quiz.create({ pregunta: 'Capital de Portugal',
-			      respuesta: 'Lisboa'
-			   })
-	        .then(function(){console.log('Base de datos inicializada')});
+		Quiz.bulkCreate( 
+		[ {pregunta: 'Capital de Italia',   respuesta: 'Roma', tema: 'Geografía e historia'},
+		  {pregunta: 'Capital de Francia', respuesta: 'Paris', tema: 'Geografía e historia'},
+		  {pregunta: 'Bus Universal en Serie', respuesta: 'USB', tema: 'Tecnologia'},
+		  {pregunta: 'Planeta rojo', respuesta: 'Marte', tema: 'Ciencia'}
+		]
+                ).then(function(){console.log('Base de datos inicializada')});
 	  };
 	});
 });
