@@ -16,12 +16,13 @@
 <body>
 <div id="page-wrap">
    <header class="main" id="h1">
-	<%if(!session.user){%>
-          <span class="right"><a href="/login">Login</a></span>
-        <%}else{%>
-          <span class="right"> <%=session.user.username%> <a href="/logout">Logout</a></span>
-        <%}%>
-
+	<div align="right">
+		<%if(!session.user){%>
+		  <span class="right"><a href="/login">Login</a></span>
+		<%}else{%>
+		  <span class="right"> <%=session.user.username%> <a href="/logout">Logout</a></span>
+		<%}%>
+	</div>
 	<h2>Quiz<span>: el juego de las preguntas</span></h2>
    </header>
    
@@ -47,7 +48,7 @@
    <footer class="main" id="f1">
      <a href="http://es.wikipedia.org/wiki/Quiz">
        ¿Qué es un Quiz? </a><br/>
-     <a href="https://github.com/jcbarreiro/tarea_Modulo8">
+     <a href="https://github.com/jcbarreiro/tarea_Modulo9">
        proyecto en GitHub </a>
    </footer>
 </div>

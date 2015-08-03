@@ -72,6 +72,7 @@ app.use(function(req, res, next) {
 	if (req.session.user) {
 		if (Date.now() - req.session.user.lastRequestTime > TIME_LOGOUT) {
 			delete req.session.user;
+			res.render('error', { message: "La sesión ha caducado", error: {}, errors: [] });
 		} else {
 			req.session.user.lastRequestTime = Date.now();
 		}
