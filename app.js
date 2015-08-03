@@ -47,27 +47,38 @@ app.use(function(req, res, next) {
 
 //MW de Autologout (tarea módulo9)
 
-app.use(function(req, res, next){
+//app.use(function(req, res, next){
+//
+//    if(req.session.user){
+//        // Petición autenticada
+//        var now = new Date().getTime();
+//        lastInteraction = req.session.lastInteraction;
+//
+//        if (lastInteraction && (now - lastInteraction) > TIME_LOGOUT){            
+//            // Sesión caducada
+//            delete req.session.user;
+//            res.status(401);
+//            res.render('error', { message: "La sesión ha caducado", error: {}, errors: [] });
+//        }else{
+//            req.session.lastInteraction = new Date().getTime();
+//            res.locals.session = req.session;
+//        }
+//    }    
+//
+//    next();
+//});
 
-    if(req.session.user){
-        // Petición autenticada
-        var now = new Date().getTime();
-        lastInteraction = req.session.lastInteraction;
-
-        if (lastInteraction && (now - lastInteraction) > TIME_LOGOUT){            
-            // Sesión caducada
-            delete req.session.user;
-            res.status(401);
-            res.render('error', { message: "La sesión ha caducado", error: {}, errors: [] });
-	    req.session.lastInteraction = new Date().getTime();
-        }else{
-            req.session.lastInteraction = new Date().getTime();
-            res.locals.session = req.session;
-        }
-    }    
-
-    next();
+app.use(function(req, res, next) {
+	if (req.session.user) {
+		if (Date.now() - req.session.user.lastRequestTime > TIME_LOGOUT) {
+			delete req.session.user;
+		} else {
+			req.session.user.lastRequestTime = Date.now();
+		}
+	}
+	next();
 });
+
 
 app.use('/', routes);
 //app.use('/users', users);
