@@ -1,8 +1,8 @@
 Añadir comentario: <p>
 
-<form method="post" action="/quizes/<%=quizid%>/comments/" name="comentario_form">      
+<form method="post" action="/quizes/<%=quizid%>/comments/" name="comentario_form" onsubmit="return validar();>      
   <input type="text" id="comment" name="comment[texto]" value=""/> <p>
-  <button type="submit" onclick="validar();">Enviar</button>
+  <button type="submit">Enviar</button>
 </form>
 <script>
 function validar(){
