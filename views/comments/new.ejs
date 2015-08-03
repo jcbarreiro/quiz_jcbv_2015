@@ -1,14 +1,13 @@
 Añadir comentario: <p>
 
-<form method="post" action="/quizes/<%=quizid%>/comments/" name="comentario_form" onsubmit="return validar();>      
+<form method="post" action="/quizes/<%=quizid%>/comments/" name="comentario_form" onsubmit="return validar();">      
   <input type="text" id="comment" name="comment[texto]" value=""/> <p>
   <button type="submit">Enviar</button>
 </form>
 <script>
 function validar(){
-	if(document.comentario_form.comment.value==''){
-		alert('El comentario está vacío');
-		document.NombreForm.NombreCampo.focus();
+	if(document.getElementById('comment').value == ''){
+		alert('El comentario está vacío');		
 		return false;
 	}
 }
