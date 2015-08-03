@@ -1,6 +1,15 @@
 Añadir comentario: <p>
 
-<form method="post" action="/quizes/<%=quizid%>/comments/" >      
+<form method="post" action="/quizes/<%=quizid%>/comments/" name="comentario_form">      
   <input type="text" id="comment" name="comment[texto]" value=""/> <p>
-  <button type="submit">Enviar</button>
+  <button type="submit" onclick="validar();">Enviar</button>
 </form>
+<script>
+function validar(){
+	if(document.comentario_form.comment.value==''){
+		alert('El comentario está vacío');
+		document.NombreForm.NombreCampo.focus();
+		return false;
+	}
+}
+</script>
