@@ -16,10 +16,6 @@ exports.calculate = function (req, res, next) {
     statistics.quizes = numQuizes;
     return models.Comment.count();
   })
-  .then(function (numComments) { // número de comentarios
-    statistics.comments = numComments;
-    return models.Comment.countUnpublished();
-  })
   .then(function (numUnpublished) { // número de comentarios sin publicar
     statistics.commentsUnpublished = numUnpublished;
     return models.Comment.countCommentedQuizes();
