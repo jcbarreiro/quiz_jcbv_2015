@@ -37,6 +37,7 @@ Quiz.hasMany(Comment);   // parte n de la relación
 
 exports.Quiz = Quiz; // exportar definicion de la tabla Quiz
 exports.Comment = Comment; // exportar tabla Comment
+exports.sequelize = sequelize;//exportamos BD para estadísticas.
 
 // sequelize.sync() crea e inicializa tabla de preguntas en DB
 //sequelize.sync().success(function() {
