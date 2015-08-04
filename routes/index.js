@@ -4,6 +4,7 @@ var router = express.Router();
 var quizController = require('../controllers/quiz_controller');
 var commentController = require('../controllers/comment_controller');
 var sessionController = require('../controllers/session_controller');
+var statisticsController = require('../controllers/statistics_controller');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -42,5 +43,9 @@ router.post('/quizes/:quizId(\\d+)/comments',     commentController.create);
 //este debería ser un put no get para hacerlo bien
 router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish', 
 	                                    sessionController.loginRequired, commentController.publish);
+
+//Estadísticas
+router.get('/quizes/statistics', statisticsController.calculate, statisticsController.show);
+
 
 module.exports = router;
